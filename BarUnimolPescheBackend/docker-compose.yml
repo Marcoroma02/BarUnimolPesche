@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  db_backend:
+    container_name: db_backend
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=server
+    ports:
+      - 3306:3306
+    volumes:
+      - db:/var/lib/mysql
+  backend:
+    container_name: node_backend
+    depends_on:
+      - db_backend
+    image: "node:19-bullseye"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "3000:3000"
+    command: "npm start"
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+volumes: 
+  db:
