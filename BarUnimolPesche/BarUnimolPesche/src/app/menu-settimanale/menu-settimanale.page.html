@@ -1,0 +1,137 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="backToMainMenu" defaultHref="main-menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <h1 class="menuSettimanaleTitle"><b>MENÙ SETTIMANALE</b></h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="menuSettimanaleContent" fullscreen="true">
+
+  <div class="mainDiv">
+    
+    <ion-card class="menuCard" color="light" *ngIf="menuGiornaliero">
+      <ion-card-content class="menuCardContent">
+        <h1 class="giornoTitle"><b>LUNEDÌ</b></h1>
+        <br>
+        <b>- I PRIMI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.lunedi.primo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.lunedi.primo2}}</p> <br>
+        <b>- I SECONDI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.lunedi.secondo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.lunedi.secondo2}}</p> <br>
+        <b>- I CONTORNI</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.lunedi.contorno1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.lunedi.contorno2}}</p>
+        <br>
+
+        <p class="menuCardAdvisor"><ion-icon name="warning-outline"></ion-icon> Prenotazione richiesta entro le ore
+          11:00</p>
+        <p class="menuCardAdvisor"><ion-icon name="alarm-outline"></ion-icon> Ritiro previsto a partire dalle ore 13:00
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="menuCard" color="light" *ngIf="menuGiornaliero">
+
+      <ion-card-content class="menuCardContent">
+        <h1 class="giornoTitle"><b>MARTEDÌ</b></h1>
+        <br>
+        <b>- I PRIMI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.martedi.primo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.martedi.primo2}}</p> <br>
+        <b>- I SECONDI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.martedi.secondo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.martedi.secondo2}}</p> <br>
+        <b>- I CONTORNI</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.martedi.contorno1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.martedi.contorno2}}</p>
+        <br>
+
+        <p class="menuCardAdvisor"><ion-icon name="warning-outline"></ion-icon> Prenotazione richiesta entro le ore
+          11:00</p>
+        <p class="menuCardAdvisor"><ion-icon name="alarm-outline"></ion-icon> Ritiro previsto a partire dalle ore 13:00
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="menuCard" color="light" *ngIf="menuGiornaliero">
+
+      <ion-card-content class="menuCardContent">
+        <h1 class="giornoTitle"><b>MERCOLEDÌ</b></h1>
+        <br>
+        <b>- I PRIMI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.mercoledi.primo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.mercoledi.primo2}}</p> <br>
+        <b>- I SECONDI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.mercoledi.secondo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.mercoledi.secondo2}}</p> <br>
+        <b>- I CONTORNI</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.mercoledi.contorno1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.mercoledi.contorno2}}</p>
+        <br>
+
+        <p class="menuCardAdvisor"><ion-icon name="warning-outline"></ion-icon> Prenotazione richiesta entro le ore
+          11:00</p>
+        <p class="menuCardAdvisor"><ion-icon name="alarm-outline"></ion-icon> Ritiro previsto a partire dalle ore 13:00
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="menuCard" color="light" *ngIf="menuGiornaliero">
+
+      <ion-card-content class="menuCardContent">
+        <h1 class="giornoTitle"><b>GIOVEDÌ</b></h1>
+        <br>
+        <b>- I PRIMI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.giovedi.primo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.giovedi.primo2}}</p> <br>
+        <b>- I SECONDI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.giovedi.secondo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.giovedi.secondo2}}</p> <br>
+        <b>- I CONTORNI</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.giovedi.contorno1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.giovedi.contorno2}}</p>
+        <br>
+
+        <p class="menuCardAdvisor"><ion-icon name="warning-outline"></ion-icon> Prenotazione richiesta entro le ore
+          11:00</p>
+        <p class="menuCardAdvisor"><ion-icon name="alarm-outline"></ion-icon> Ritiro previsto a partire dalle ore 13:00
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="menuCard" color="light" *ngIf="menuGiornaliero">
+
+      <ion-card-content class="menuCardContent">
+        <h1 class="giornoTitle"><b>VENERDÌ</b></h1>
+        <br>
+        <b>- I PRIMI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.venerdi.primo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.venerdi.primo2}}</p> <br>
+        <b>- I SECONDI DEL GIORNO</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.venerdi.secondo1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.venerdi.secondo2}}</p> <br>
+        <b>- I CONTORNI</b> <br>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.venerdi.contorno1}}</p>
+        <p class="menuCardP">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{menuGiornaliero.venerdi.contorno2}}</p>
+        <br>
+
+        <p class="menuCardAdvisor"><ion-icon name="warning-outline"></ion-icon> Prenotazione richiesta entro le ore
+          11:00</p>
+        <p class="menuCardAdvisor"><ion-icon name="alarm-outline"></ion-icon> Ritiro previsto a partire dalle ore 13:00
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+  <div class="unimolLogoDiv">
+    <ion-img class="unimolLogo" src="assets/images/unimolLogo.jpg" alt="unimolLogo"></ion-img>
+  </div>
+
+
+</ion-content>

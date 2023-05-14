@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="backToMainMenu" defaultHref="main-menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <h1 class="prenotaPranzoTitle"><b>PRENOTA PRANZO</b></h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="prenotaPranzoContent" fullscreen="true">
+  <div class="mainDiv">
+    <h3 class="titoloLista"><b>PRIMI</b></h3>
+    <ion-list class="listaPrimi" *ngIf="giorno">
+      <ion-radio-group value="primi" [(ngModel)]="primo">
+        <ion-item class="item">
+          <ion-label>{{giorno.primo1}}</ion-label>
+          <ion-radio class="radio" slot="start" value={{giorno.primo1}}></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>{{giorno.primo2}}</ion-label>
+          <ion-radio class="radio" slot="start" value={{giorno.primo2}}></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Nessuno</ion-label>
+          <ion-radio class="radio" slot="start" value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    
+    <h3 class="titoloLista"><b>SECONDI</b></h3>
+    <ion-list class="listaSecondi" *ngIf="giorno">
+      <ion-radio-group value="secondi" [(ngModel)]="secondo">
+        <ion-item>
+          <ion-label>{{giorno.secondo1}}</ion-label>
+          <ion-radio class="radio" slot="start" value={{giorno.secondo1}}></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>{{giorno.secondo2}}</ion-label>
+          <ion-radio class="radio" slot="start" value={{giorno.secondo2}}></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Nessuno</ion-label>
+          <ion-radio class="radio" slot="start" value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <h3 class="titoloLista"><b>CONTORNI</b></h3>
+    <ion-list class="listaContorni" *ngIf="giorno">
+      <ion-radio-group value="contorni" [(ngModel)]="contorno">
+        <ion-item>
+          <ion-label>{{giorno.contorno1}}</ion-label>
+          <ion-radio class="radio" slot="start" value={{giorno.contorno1}}></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>{{giorno.contorno2}}</ion-label>
+          <ion-radio class="radio" slot="start" value={{giorno.contorno2}}></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Nessuno</ion-label>
+          <ion-radio class="radio" slot="start" value="No"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <div class="selezionaFasciaDiv">
+      <ion-list>
+        <ion-item >
+          <ion-select class="fasciaPlaceholder" interface="popover" placeholder="Fascia" [(ngModel)]="fascia">
+            <ion-select-option value="0">Nessuna fascia</ion-select-option>
+            <ion-select-option value="1">Fascia 1</ion-select-option>
+            <ion-select-option value="2">Fascia 2</ion-select-option>
+            <ion-select-option value="3">Fascia 3</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div class="prenotaButtonDiv">
+      <ion-button class="prenotaButton" (click)="prenota()">PRENOTA</ion-button>
+    </div>
+  </div>
+</ion-content>

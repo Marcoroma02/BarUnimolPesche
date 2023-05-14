@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="logoutButton" defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <h1 class="mainMenuTitle"><b>BAR UNIMOL PESCHE</b></h1>
+</ion-header>
+
+<ion-content class="mainMenuContent" [fullscreen]="true">
+  <div class="mainDiv" slot="fixed">
+    <div class="unimolLogoDiv">
+      <ion-img class="unimolLogo" src="assets/images/unimolLogo.jpg" alt="unimolLogo"></ion-img>
+    </div>
+
+    <div class="buttonsMainDiv">
+      <div class="buttonDiv">
+        <ion-button (click)="visualizzaMenuSettimanale()" class="buttonClick"> <b>MENÙ SETTIMANALE</b> </ion-button>
+      </div>
+      <div class="buttonDiv">
+        <ion-button (click)="getPrenotazioneUtente()" class="buttonClick"> <b>PRENOTA PRANZO</b> </ion-button>
+      </div>
+      <div class="buttonDiv">
+        <ion-button (click)="modificaPrenotazione()" class="buttonClick"> <b>MODIFICA PRENOTAZIONE</b> </ion-button>
+      </div>
+      <div class="buttonDiv">
+        <ion-button (click)="rimuoviPrenotazione()" class="buttonClick"> <b>RIMUOVI PRENOTAZIONE</b> </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

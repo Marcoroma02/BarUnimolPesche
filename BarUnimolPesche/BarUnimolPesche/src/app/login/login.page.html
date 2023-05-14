@@ -1,0 +1,34 @@
+<ion-header>
+  <h1 class="barUnimolLoginTitle"><b>BAR UNIMOL PESCHE</b></h1>
+</ion-header>
+
+<ion-content class="loginContent" [fullscreen]="true">
+  
+  <div class="test" slot="fixed">
+    <div class="unimolLogoDiv">
+      <ion-img class="unimolLogo" src="assets/images/unimolLogo.jpg" alt="unimolLogo"></ion-img>
+    </div>
+    <div class="warningText">
+      <div class="loginTitleDiv">
+        <p class="loginTitle"><b>LOGIN</b></p>
+      </div>
+
+      <p>*stesso nome del portale dello studente</p>
+    </div>
+
+    <div class="userInput">
+      <ion-item class="userNameInput">
+        <ion-input color="light" [clearInput]="true" placeholder="nome utente*" [(ngModel)]="userName"></ion-input>
+      </ion-item>
+
+      <ion-item class="userPasswordInput">
+        <ion-input color="light" type="password" [clearInput]="true" placeholder="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="buttonDiv">
+      <ion-button (click)="accedi()" class="loginButton"><b>ACCEDI</b></ion-button>
+    </div>
+
+  </div>
+</ion-content>

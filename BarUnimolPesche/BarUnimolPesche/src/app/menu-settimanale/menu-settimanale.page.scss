@@ -1,0 +1,59 @@
+.menuSettimanaleTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    // padding-top: 10%;
+    font-size: xx-large;
+    color: white;
+}
+
+.menuSettimanaleContent {
+    --ion-background-color: #012D5E
+}
+
+ion-toolbar {
+    --background: #012D5E
+}
+
+.mainDiv {
+    position: relative;
+}
+
+.backToMainMenu {
+    --background: #012D5E;
+    color: #ffffff;
+}
+
+.unimolLogoDiv {
+    margin: auto;
+    width: 50%;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+
+.unimolLogo {
+    margin: auto;
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+.menuCard {
+    background-color: #CAEF23;
+    color: #012D5E;   
+}
+
+.menuCardContent {
+    font-size: 150%;
+}
+
+.menuCardP {
+    font-size: 90%;
+}
+
+.menuCardAdvisor {
+    font-size: 70%;
+}
+
+.giornoTitle {
+    text-align: center;
+}

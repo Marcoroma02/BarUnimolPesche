@@ -1,0 +1,59 @@
+.mainMenuTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    // padding-top: 10%;
+    font-size: xx-large;
+    color: white;
+}
+
+.mainMenuContent {
+    --ion-background-color: #012D5E
+}
+
+.mainDiv {
+    position: relative;
+}
+
+.unimolLogoDiv {
+    margin: auto;
+    width: 50%;
+    padding-top: 20%;
+}
+
+.unimolLogo {
+    margin: auto;
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+.buttonsMainDiv {
+    margin: auto;
+    padding-top: 10%;
+    width: 90%;   
+}
+
+.buttonDiv {
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    
+}
+
+.buttonClick {
+    --color: #012D5E;
+    --background: #CAEF23;
+    --background-activated: #ffffff;
+    width: 70%;
+}
+
+.logoutButton {
+    --background: #012D5E;
+    color: #ffffff;
+}
+
+ion-toolbar {
+    --background: #012D5E
+}
